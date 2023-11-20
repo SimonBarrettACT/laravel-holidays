@@ -2,9 +2,9 @@
 
 namespace SimonBarrettACT\LaravelHolidays;
 
+use Carbon\Carbon;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SimonBarrettACT\LaravelHolidays\Commands\LaravelHolidaysCommand;
 
 class LaravelHolidaysServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +17,10 @@ class LaravelHolidaysServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-holidays')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-holidays_table')
-            ->hasCommand(LaravelHolidaysCommand::class);
+            ->hasConfigFile();
+
+        /** @noinspection PhpUnhandledExceptionInspection */
+        Carbon::mixin(new LaravelHolidays);
+
     }
 }
