@@ -2,9 +2,9 @@
 
 namespace SimonBarrettACT\LaravelHolidays;
 
+use SimonBarrettACT\LaravelHolidays\Commands\LaravelHolidaysCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SimonBarrettACT\LaravelHolidays\Commands\LaravelHolidaysCommand;
 
 class LaravelHolidaysServiceProvider extends PackageServiceProvider
 {
