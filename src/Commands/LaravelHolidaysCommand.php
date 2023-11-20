@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace SimonBarrettACT\LaravelHolidays\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelHolidaysCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-holidays';
 
     public $description = 'My command';
 
